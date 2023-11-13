@@ -11,6 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 h1{
@@ -31,8 +32,14 @@ h1{
     transform: translateX(200%);
     transition: transform 0.4s ease;
 }
+.box:nth-of-type(even) {
+    transform: translateX(-200%);
+}
 
 .box.show{
     transform: translateX(0);
 }
 
+.box h2{
+    font-size: 45px;
+}
