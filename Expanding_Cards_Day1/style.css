@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@500;700&family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@500;700&family=Muli&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -58,6 +58,10 @@ body{
     .panel:nth-of-type(4), 
     .panel:nth-of-type(5){
         display: none;
+    }
+
+    .panel h3{
+        font-size: 20px;
     }
 }
 
