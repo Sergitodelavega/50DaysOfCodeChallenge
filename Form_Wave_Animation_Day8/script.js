@@ -1,5 +1,6 @@
 const labels = document.querySelectorAll('.form-control label');
 
+// Loop through each label element
 labels.forEach(label => {
     label.innerHTML = label.innerText
     .split('')
