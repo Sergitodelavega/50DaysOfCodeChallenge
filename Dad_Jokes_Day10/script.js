@@ -1,9 +1,12 @@
 const jokeEl = document.getElementById('joke');
 const jokeBtn = document.getElementById('jokeBtn');
 
+// Add a click event listener to the joke button
 jokeBtn.addEventListener('click', generateJoke);
 
 //USING ASYNC / AWAIT
+
+// Define the generateJoke function using async/await
 async function generateJoke(){
     const config = {
         headers: {
@@ -11,6 +14,7 @@ async function generateJoke(){
         },
     }
 
+    // Make the fetch request to the API endpoint
     const res = await fetch('https://icanhazdadjoke.com', config);
     const data = await res.json();
     jokeEl.innerHTML = data.joke;
