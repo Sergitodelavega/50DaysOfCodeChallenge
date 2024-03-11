@@ -3,6 +3,8 @@ const insert = document.getElementById('insert');
 
 window.addEventListener('keydown', (e) => {
     console.log(e);
+
+    // Set the inner HTML of the insert element to a string of div elements
     insert.innerHTML = `
     <div class="key">
             ${e.key}
