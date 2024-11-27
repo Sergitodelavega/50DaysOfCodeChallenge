@@ -1,7 +1,7 @@
 const container = document.querySelector('.container')
 
 const unsplashURL = 'https://source.unsplash.com/random/'
-const rows = 10
+const rows = 7
 
 for(i = 0; i < rows * 3; i++){
     const img = document.createElement('img')
