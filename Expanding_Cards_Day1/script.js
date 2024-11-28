@@ -17,3 +17,7 @@ function removeActiveClasses(){
         panel.classList.remove('active');
     });
 }
+
+function addActiveClasses(){
+    
+}
