@@ -1,5 +1,5 @@
 const resultEl = document.getElementById('result')
-const lengthEl = document.getElementById('lenght')
+const lengthEl = document.getElementById('length')
 const upperEl = document.getElementById('uppercase')
 const lowerEl = document.getElementById('lowercase')
 const numbersEl = document.getElementById('numbers')
@@ -49,10 +49,22 @@ const randomFunc = {
     symbol : getRandomSymbol
 }
 
+clipboardEl.addEventListener('click', () => {
+    const password = resultEl.innerText;
+  if (!password) {
+    return;
+  }
+  
+  navigator.clipboard.writeText(password);
+    alert('Password copied to clipboard!')
+})
 
 function getRandomLower(){
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
+
+console.log(getRandomLower(124));
+
 
 function getRandomUpper(){
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
@@ -63,7 +75,6 @@ function getRandomNumber(){
 }
 
 function getRandomSymbol(){
-    const symbols = '!@#$%^&*(){}[]=<>/,.'
-    return symbols[Math.floor(Math.random() * symbols.length)]
+    const symbols = '!@#$%^&*(){}[]=<>/,.';
+    return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
